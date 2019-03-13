@@ -176,7 +176,7 @@ a{
     }
     #logo{
         margin-top: 10px;
-        top: -50px;
+        top: -40px;
         transform: scale(.2);
         left: calc(50% - 75px);
     }
