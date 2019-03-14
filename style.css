@@ -120,7 +120,11 @@ a{
     width: 302px;
     height: 180px;
     margin: 10px;
-    border: 10px solid hsla(0, 0%, 100%, 0.5)
+    border: 10px solid hsla(0, 0%, 100%, 0.5);
+    transition: all .25s;
+}
+.picture:hover{
+    transform: scale(1.25);
 }
 .color1{
     background-color: rgb(255, 210, 63)
@@ -176,7 +180,7 @@ a{
     }
     #logo{
         margin-top: 10px;
-        top: -40px;
+        top: -50px;
         transform: scale(.2);
         left: calc(50% - 75px);
     }
