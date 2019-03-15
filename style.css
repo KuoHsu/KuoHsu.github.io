@@ -120,7 +120,8 @@ a{
     
 
 .pictures{
-    width: 90%;
+    width: 95%;
+    margin-left: -20px;
 }
 .picture{
     width: 302px;
