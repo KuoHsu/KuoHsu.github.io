@@ -49,6 +49,10 @@ a{
     display: block;
     text-decoration: none;
     text-align: center;
+    transition: background-color .25s;
+}
+#list li:hover{
+    background-color: rgba(255, 255, 255, 0.75)
 }
 #logo{
     position: absolute;
@@ -122,9 +126,10 @@ a{
     margin: 10px;
     border: 10px solid hsla(0, 0%, 100%, 0.5);
     transition: all .25s;
+    display: inline-block;
 }
 .picture:hover{
-    transform: scale(1.25);
+    transform: scale(2);
 }
 .color1{
     background-color: rgb(255, 210, 63)
@@ -139,18 +144,52 @@ a{
 
 
 
-@media (max-width: 1600px){
+@media (max-width: 1800px){
     .picture{
         width: 202px;
         height: 125px;
         margin: 6px;
         border: 6px solid hsla(0, 0%, 100%, 0.5)
     }
+    .picture:hover{
+        transform: scale(2.5);
+    }
 }
-@media (max-width: 600px){
+@media (max-width: 1400px){
     body{
-        background-size: 600px;
-        overflow: visible;
+        background-size: 1400px;
+        background-position: center;
+    }
+    .title{font-size: 70px;}
+    .subtitle{font-size: 54px;}
+    .content{font-size: 28px;}
+    .picture{
+        width: 150px;
+        height: 93px;
+    }
+    .picture:hover{
+        transform: scale(1.5);
+    }
+    #list{
+        width: 300px;
+    }
+    #list li{
+        width: 300px;
+    }
+    #logo{
+        transform: scale(.75);
+        left: 60px;
+    }
+    #main{
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+
+}
+
+@media (max-width: 800px){
+    body{
+        overflow-y: visible
     }
     .title{
         font-size: 30px;
@@ -162,7 +201,25 @@ a{
     }
     .content{
         font-size: 20px;
+        padding: 0 10px 0 20px;
+        margin: 10px 0 0 0;
+        text-align: left;
+    }
+    .article{
         margin: 0;
+        text-align: center;
+        min-height: 600px;
+    }
+
+    .picture{
+        width: 202px;
+        height: 125px;
+        margin: 18px;
+        border: 6px solid hsla(0, 0%, 100%, 0.5)
+    }
+    .pictures{
+        text-align: center;
+        width: 100%;
     }
     #list{
         height: 230px;
@@ -170,7 +227,7 @@ a{
     }
     #list ul{
         width: 100%;
-        margin-top: 85px;
+        margin-top: 90px;
     }
     #list li{
         width: 100%;
@@ -180,8 +237,8 @@ a{
     }
     #logo{
         margin-top: 10px;
-        top: -50px;
-        transform: scale(.2);
+        top: -40px;
+        transform: scale(.25);
         left: calc(50% - 75px);
     }
     #main{
@@ -190,9 +247,11 @@ a{
         width: 100%;
         min-height: 500px;
         height: auto;
-        top: 223px;
+        top: 228px;
         left: 0; 
+        border-top: dashed hsla(0, 0%, 100%, 0.75) 4px;
     }
+    
 }
 
 
